@@ -4,14 +4,32 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
-<form action="UserRegistration">
-<input type="text" placeholder="Enter the username" name="username"><br>
-<input type="text" placeholder="Enter the emailid" name="emailid"><br>
-<input type="password" placeholder="Enter the password" name="password" ><br>
-<input type="text" placeholder="Enter the mobile number" name="mobilenumber"><br>
-<input type="text" placeholder="Enter the gender" name="gender"><br>
-<input type="submit">
-</form>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f0f0f0; font-family: Arial, sans-serif;">
+    <div style="width: 400px; background: #fff; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); padding: 20px;">
+        <h2 style="text-align: center; margin-bottom: 20px; color: #333;">Registration Form</h2>
+        <form action="UserRegistration" style="display: flex; flex-direction: column;">
+            <label for="username" style="margin-bottom: 5px; font-size: 14px;">Username:</label>
+            <input type="text" id="username" name="username" required style="padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px;">
+            
+            <label for="email" style="margin-bottom: 5px; font-size: 14px;">Email ID:</label>
+            <input type="text" id="email" name="emailid" required style="padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px;">
+            
+            <label for="password" style="margin-bottom: 5px; font-size: 14px;">Password:</label>
+            <input type="text" id="password" name="password" required style="padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px;">
+            
+            <label for="mobile" style="margin-bottom: 5px; font-size: 14px;">Mobile Number:</label>
+            <input type="text" id="mobile" name="mobilenumber" required style="padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px;">
+            
+            <label for="gender" style="margin-bottom: 5px; font-size: 14px;">Gender:</label>
+            <select id="gender" name="gender" required style="padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px;">
+                <option value="" disabled selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <input type="submit" value="Register" style="padding: 10px; border: none; border-radius: 5px; background-color: #007BFF; color: white; font-size: 16px; cursor: pointer;">
+        </form>
+    </div>
 </body>
 </html>

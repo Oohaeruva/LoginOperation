@@ -4,12 +4,15 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
-<form action="loginPage"> 
-<input type="text" placeholder="Enter the emailid" name="emailid">
-<input type="text" placeholder="Enter the password" name="password">
-<input type="submit">
-</form>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f0f0f0; font-family: Arial, sans-serif;"></body>
+<div style="width: 400px; height: 300px; background: #fff; border-radius: 20px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px;">
+    <h2 style="margin: 0; margin-bottom: 20px; font-size: 24px; color: #333;">Login</h2>
+    <form action="loginPage" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+                <input type="text" placeholder="Email ID" name="emailid" required style="width: 80%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 20px; font-size: 16px;">
+                <input type="text" placeholder="Password" name="password" required style="width: 80%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 20px; font-size: 16px;">
+                <input type="submit" value="Login" style="width: 50%; padding: 10px; border: none; border-radius: 20px; background-color: #007BFF; color: white; font-size: 16px; cursor: pointer; transition: background-color 0.3s;">
+    </form>
+        </div>
 <h1 th:text="${msg}"></h1>
 </body>
 </html>
